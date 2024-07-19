@@ -32,3 +32,8 @@
    main.c |    2 +-
    1 file changed, 1 insertion(+), 1 deletion(-)  
   ```
+
+## grep
+```sh
+grep foo  --include='*.c' -r
+```
