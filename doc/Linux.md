@@ -18,7 +18,7 @@
       printf("Hello, Star Platinum!\n");
   }
   ```
-- Run `diffstat` with `diff`.
+- Run `diff` only.
   ```
   $ diff 01_before/ 02_after/ 
   diff 01_before/main.c 02_after/main.c
@@ -27,6 +27,7 @@
   ---
   >     printf("Hello, Star Platinum!\n");
   ```
+- Run `diff` with `diffstat`.
   ```
   $ diff 01_before/ 02_after/ |diffstat 
    main.c |    2 +-
