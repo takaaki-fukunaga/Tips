@@ -28,7 +28,8 @@ git config --list
 git config -l
 ```
 
-## git log 
+## git log
+### Check the differences between forked and original repository
 1. Clone the forked repository.
    ```sh
    git clone https://github.com/nxp-imx/linux-imx.git
