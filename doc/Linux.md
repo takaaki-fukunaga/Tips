@@ -36,5 +36,5 @@
 
 ## grep
 ```sh
-grep foo  --include='*.c' -r
+grep -r -i foo --include='*.c'
 ```
