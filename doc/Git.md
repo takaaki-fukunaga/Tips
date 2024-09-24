@@ -3,6 +3,12 @@
 - GitHub Training Kit
   - https://training.github.com/
 
+## git branch
+### Show all branches
+```sh
+git branch -a
+```
+
 ## git config
 ### Set user name and email address
 ```sh
