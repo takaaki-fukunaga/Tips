@@ -17,3 +17,6 @@
 
 ## Renesas
 - https://github.com/renesas-rz/rz_linux-cip
+
+## Texas Instruments
+- https://github.com/TexasInstruments/linux-kernel
