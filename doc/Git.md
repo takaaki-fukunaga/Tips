@@ -70,6 +70,10 @@ git config -l
      $ git log --oneline --no-merges stable/linux-6.6.y..origin/lf-6.6.y|wc -l
      6064
      ```
+### Show logs
+```sh
+git log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'
+```
 
 ### Reference
 - https://zenn.dev/link/comments/871bc0b55961a9
