@@ -1,4 +1,24 @@
-# Dpcker
+# Docker
+## Set Proxy Server
+1. Create the following directory.
+   ```sh
+   sudo mkdir /etc/systemd/system/docker.service.d
+   ```
+1. Set proxy server on http-proxy.conf.
+   ```sh
+   sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf <<EOF
+   [Service]
+   Environment="HTTP_PROXY=http://<your-proxy-server>"
+   Environment="HTTPS_PROXY=http://<your-proxy-server>"
+   EOF
+   ```
+1. Restart Docker daemon.
+   ```sh
+   sudo systemctl daemon-reload
+   ```
+   ```sh
+   sudo systemctl restart docker
+   ```
 
 ## docker run
 ### Run arm64 Container on x86_64 Machine
