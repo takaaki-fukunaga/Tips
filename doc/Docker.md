@@ -1,5 +1,5 @@
 # Docker
-## Set Proxy Server
+## Set a proxy server
 1. Create the following directory.
    ```sh
    sudo mkdir /etc/systemd/system/docker.service.d
@@ -21,7 +21,7 @@
    ```
 
 ## docker run
-### Run arm64 Container on x86_64 Machine
+### Run arm64 container on x86_64 machine
 1. Run the `docker run` command wiht `--platform` option.
    ```sh
    docker run -d -it --name ubuntu2204-arm64 --platform linux/arm64/v8 ubuntu:22.04 bash
