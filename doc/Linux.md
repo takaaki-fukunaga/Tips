@@ -70,3 +70,19 @@ grep -r -i foo --include='*.c'
 ```sh
 sudo mount -oloop,offset=$(expr 2048 \* 512) emlinux-image-weston-emlinux-bookworm-generic-x86-64.wic /mnt
 ```
+
+## xzcat
+### Count the number of packages
+1. Download a pacakge list.
+   ```sh
+   $ curl -O https://ftp.debian.org/debian/dists/trixie/main/binary-arm64/Packages.xz
+   ```
+1. Run xzcat command to see the contens of the xz file.
+   ```sh
+   $ xzcat Packages.xz | grep "^Package:" | wc -l
+   ```
+   - Command result (Aug 31, 2025)
+     ```
+     $ xzcat Packages.xz | grep "^Package:" | wc -l
+     68103
+     ```
